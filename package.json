@@ -1,0 +1,45 @@
+{
+  "name": "pi-tab-spinner",
+  "version": "0.1.0",
+  "description": "pi extension: spin an icon in the terminal tab title while the agent works, so every tab shows busy or idle at a glance",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "tab-title",
+    "spinner",
+    "ghostty"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "ymy88",
+    "url": "https://github.com/ymy88"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ymy88/pi-tab-spinner.git"
+  },
+  "homepage": "https://github.com/ymy88/pi-tab-spinner#readme",
+  "bugs": {
+    "url": "https://github.com/ymy88/pi-tab-spinner/issues"
+  },
+  "type": "module",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "files": [
+    "index.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "pi": {
+    "extensions": [
+      "./index.ts"
+    ]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "scripts": {
+    "test": "node --experimental-strip-types --no-warnings test/index.test.ts"
+  }
+}
